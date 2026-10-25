@@ -1,0 +1,39 @@
+{
+  "track": "HTML and vanilla JavaScript TodoMVC",
+  "upstream": "https://github.com/tastejs/todomvc",
+  "upstream_commit": "ff43b02e59dfa604386bb382034b2cd07c2bcd8a",
+  "hosted_url": null,
+  "contextqa_run_verified": false,
+  "scenarios": [
+    {
+      "id": "testing-lab-html-todomvc-01",
+      "title": "Add",
+      "assertion": "Two uniquely named tasks appear after Enter.",
+      "status": "exercise-not-executed"
+    },
+    {
+      "id": "testing-lab-html-todomvc-02",
+      "title": "Edit",
+      "assertion": "Double-clicking and saving changes a task title.",
+      "status": "exercise-not-executed"
+    },
+    {
+      "id": "testing-lab-html-todomvc-03",
+      "title": "Complete and filter",
+      "assertion": "A completed task appears under Completed and is absent under Active.",
+      "status": "exercise-not-executed"
+    },
+    {
+      "id": "testing-lab-html-todomvc-04",
+      "title": "Persistence",
+      "assertion": "A task and its completion status remain after reload.",
+      "status": "exercise-not-executed"
+    },
+    {
+      "id": "testing-lab-html-todomvc-05",
+      "title": "Clear completed",
+      "assertion": "Clearing completed tasks removes only completed tasks.",
+      "status": "exercise-not-executed"
+    }
+  ]
+}
