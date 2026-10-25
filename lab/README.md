@@ -4,7 +4,7 @@ This is a public educational fork of [tastejs/todomvc](https://github.com/tastej
 
 ## Status
 
-Source is available. Hosted full-stack sessions and ContextQA reports are not yet verified for this track. The exercises below are a test-design guide, not a passing test report. Upstream starting commit: `ff43b02e59dfa604386bb382034b2cd07c2bcd8a`.
+Source and the [hosted HTML app](https://contextqaai.github.io/testing-lab-html-todomvc/) are available. ContextQA reports are not yet verified for this track. The exercises below are a test-design guide, not a passing test report. Upstream starting commit: `ff43b02e59dfa604386bb382034b2cd07c2bcd8a`.
 
 ## Run locally
 
@@ -41,3 +41,11 @@ Recorded reports can be reused for the exact pinned fixture and version. Live ru
 ## Teaching brief
 
 Show the app, source and assertion; create and run the test; inspect evidence; reproduce a regression; show the fix; then test an authorized app of your own. Keep setup and execution time separate. Link the exact release and acknowledge upstream creators. Creator sponsorships should be disclosed.
+
+## Working persistence lesson
+
+The upstream selected example stores tasks in memory. The ContextQA lab baseline changes its storage to localStorage and derives the next record ID from saved tasks, so reloads do not cause ID collisions.
+
+Open the [persistent baseline](https://contextqaai.github.io/testing-lab-html-todomvc/) and add a uniquely named task, reload, and verify the task remains. Repeat at the [memory-only variant](https://contextqaai.github.io/testing-lab-html-todomvc/regression-memory-only/): the same persistence assertion fails. This variant preserves the upstream memory-only behavior; it is disclosed rather than an unexplained product failure. These are browser checks, not ContextQA execution receipts.
+
+Storage is local to your browser profile and this origin; do not enter sensitive information. A browser that disables localStorage cannot complete the baseline persistence lesson.

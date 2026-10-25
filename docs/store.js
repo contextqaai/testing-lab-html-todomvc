@@ -2,7 +2,8 @@
 (function (window) {
     "use strict";
 
-    var MemoryStorage = {};
+    // ContextQA lab change: persist tasks across reloads in this browser.
+    var MemoryStorage = window.localStorage;
     var ID = 1;
 
     /**
@@ -16,7 +17,8 @@
     function Store(name, callback) {
         callback = callback || function () {};
 
-        this._dbName = name;
+        this._dbName = "contextqa-lab-" + name;
+        name = this._dbName;
 
         if (!MemoryStorage[name]) {
             var data = {
@@ -26,7 +28,11 @@
             MemoryStorage[name] = JSON.stringify(data);
         }
 
-        callback.call(this, JSON.parse(MemoryStorage[name]));
+        var existing = JSON.parse(MemoryStorage[name]);
+        existing.todos.forEach(function (todo) {
+            ID = Math.max(ID, Number(todo.id) + 1);
+        });
+        callback.call(this, existing);
     }
 
     /**

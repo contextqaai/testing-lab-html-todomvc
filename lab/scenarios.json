@@ -2,7 +2,7 @@
   "track": "HTML and vanilla JavaScript TodoMVC",
   "upstream": "https://github.com/tastejs/todomvc",
   "upstream_commit": "ff43b02e59dfa604386bb382034b2cd07c2bcd8a",
-  "hosted_url": null,
+  "hosted_url": "https://contextqaai.github.io/testing-lab-html-todomvc/",
   "contextqa_run_verified": false,
   "scenarios": [
     {
@@ -35,5 +35,6 @@
       "assertion": "Clearing completed tasks removes only completed tasks.",
       "status": "exercise-not-executed"
     }
-  ]
+  ],
+  "regression_variant_url": "https://contextqaai.github.io/testing-lab-html-todomvc/regression-memory-only/"
 }
