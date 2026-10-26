@@ -49,3 +49,7 @@ The upstream selected example stores tasks in memory. The ContextQA lab baseline
 Open the [persistent baseline](https://contextqaai.github.io/testing-lab-html-todomvc/) and add a uniquely named task, reload, and verify the task remains. Repeat at the [memory-only variant](https://contextqaai.github.io/testing-lab-html-todomvc/regression-memory-only/): the same persistence assertion fails. This variant preserves the upstream memory-only behavior; it is disclosed rather than an unexplained product failure. These are browser checks, not ContextQA execution receipts.
 
 Storage is local to your browser profile and this origin; do not enter sensitive information. A browser that disables localStorage cannot complete the baseline persistence lesson.
+
+## Reproduce and triage
+
+Follow [the disclosed regression issue](https://github.com/contextqaai/testing-lab-html-todomvc/issues/1) and inspect the [actual browser screenshots](evidence/README.md). Compare the failing variant with the persistent baseline using the same assertion. These are browser observations, not a ContextQA run receipt.
