@@ -1,3 +1,15 @@
+<a href="https://contextqaai.github.io/testing-lab/"><img src="lab/assets/contextqa-logo.svg" alt="ContextQA" width="200"></a>
+
+# ContextQA Testing Lab — HTML and vanilla JavaScript TodoMVC
+
+Public educational source fork. **[Start the lab →](lab/README.md)** · [Scenario checklist](lab/scenarios.json) · [Central learning hub](https://github.com/contextqaai/testing-lab)
+
+The [HTML practice app](https://contextqaai.github.io/testing-lab-html-todomvc/) is hosted, with persistent and memory-only variants. Recorded ContextQA results are being prepared. No ContextQA run result is claimed by this repository.
+
+Original project: [tastejs/todomvc](https://github.com/tastejs/todomvc). Original attribution and license remain below and in the repository. ContextQA lab materials are additions; upstream authors do not endorse them.
+
+## Upstream project documentation
+
 # ![TodoMVC](media/logo.png)
 
 > Helping you select a JavaScript framework
@@ -132,3 +144,9 @@ Check out our [contribution docs](contributing.md) for more info.
 Everything in this repo is MIT License unless otherwise specified.
 
 [MIT](license.md) © Addy Osmani, Sindre Sorhus, Pascal Hartig, Stephen Sawchuk.
+
+## ContextQA learning resources
+
+[Public learning hub](https://contextqaai.github.io/testing-lab/) · [Stack/platform setup](https://github.com/contextqaai/testing-lab/blob/main/PLATFORMS.md) · [Report or reproduce an issue](https://github.com/contextqaai/testing-lab-html-todomvc/issues)
+
+This is an educational learning resource. Original source, licenses and credits remain intact. Public report links appear only after actual execution; recorded evidence is labeled separately from a fresh run.
